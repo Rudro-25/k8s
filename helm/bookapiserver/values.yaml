@@ -1,0 +1,24 @@
+replicaCount: 1
+
+deploymentLabels:
+  app: bookapiserver
+  run: app
+
+containerLabels:
+  app: bookapiserver
+  run: app
+
+matchLabels:
+  app: bookapiserver
+  run: app
+
+containerSpec:
+  name: BookapiServer
+  image: rudro25/bookapiserver
+  port: 8080
+
+service:
+  type: NodePort
+  port: 3200
+  nodePort: 30018
+  protocol: TCP
