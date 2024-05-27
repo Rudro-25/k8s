@@ -12,4 +12,4 @@ spec:
   selector:
     {{- range $key, $value:= .Values.matchLabels }}
     {{ $key }}: {{ $value }}
-    {{- end }}
+    {{- end }}f
