@@ -8,7 +8,8 @@
 
 
 **Steps to See API Server Groups**
-kubectl proxy
+
+`kubectl proxy`
 
 open `curl localhost:8001`
 
